@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 48%);
+    font-size: 16px;
+    background-image: url("/images/image-hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.header-sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.burger_nav_bar {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav_bar {
+        display: none;
+    }
+    .nav_bar_toggle {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        padding-top: 80px;
+        padding-bottom: 20px;
+        list-style: none;
+        background-color: white;
+        z-index: 1;
+      
+    }
+    .nav_toggle {
+        justify-content: center !important;
+        margin-left: 10px;
+        margin-right: 10px;
+        vertical-align: top;
+        
+    }
+    .nav__item_toggle a {
+        font-size: 160%;
+        display: block;
+        padding: 20px; 
+        letter-spacing: 1px;
+        line-height: 1em;
+        color: white;
+        }
+    .nav__item_toggle a:hover {
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+        }
+    .nav_container .nav_collapse {
+        align-items: flex-start;
+    }    
+    .nav_container .nav {
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+    .nav_container .navigation {
+        flex-direction: column !important;
+      }
+    .logo {
+        display: block;
+        z-index: 2;
+        position: sticky;
+        padding: 6%;
+    }  
+
+    .burger_nav_bar {
+        display: block;
+        top: 5px;
+        right: 30px;
+        width: 40px;
+        height: 60px;
+        background-color: transparent;
+        z-index: 2;
+        position: fixed;
+    }
+    .burger_lines,
+    .burger_lines::after,
+    .burger_lines::before {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        display: block;
+        top: 50%;
+        transition-duration: .25s;
+    }  
+   
+    .burger_lines::after {
+        content: "";
+        top: -12px;
+    }
+    .burger_lines::before {
+        content: "";
+        top: 12px;
+    }
+    .burger_cross {
+        transform: rotate(45deg);
+        transition-duration: .25s;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        display: block;
+      }
+    .burger_cross::before {
+        top: 0;
+        transform: rotate(0);
+        
+      }
+    .burger_cross::after {
+        top: 0;
+        transform: rotate(90deg);    
+      }   
+
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 1440px) {
+        .header .row {
+            flex-wrap: nowrap;
+        }
+       
+    
+    }
+    
+    .nav {
+        justify-content: space-between;
+        display: flex;
+    }
+    
+    .nav__item {
+        font-family: 'Outfit', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;   
+        
+    }
+    .nav__item a {
+        color: white;
+        
+    }
+    .nav__item a:hover {
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .main_content {
+        background-color: white;
+        margin-top: 14%;
+        width: 50%;
+        margin-left: 25%;
+
+    }
+
+    .intro, .statistics {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 3px solid black;
+    }
+    
+    .about {
+        padding: 20px;
+        border: 3px solid black;
+    }
+
