@@ -9,19 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Crowdfunding product page</title>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
   <section class="headers">
     <div class="header">
       <div class="row align-items-center">
 
-          <div class="col-lg-2 col-md-2 col-sm-2">
+          <div class="col-lg-3 col-md-5 col-sm-2">
               <img src="/images/logo.svg" class="logo">
           </div>
 
@@ -33,7 +30,7 @@
           </div>
   
 
-          <div class="col-lg-5 offset-lg-3 nav_container">
+          <div class="col-lg-4 offset-lg-4 nav_container">
               <nav class="nav_bar nav_collapse">
                 <ul class="nav navigation">
                     <li class="nav__item">
@@ -63,11 +60,14 @@
       
 <section class="main">
   <div class="main_content">
-
+    <div class="mastercraft_logo">
+      <a href="#"><img src="/images/logo-mastercraft.svg" alt=""></a>
+    </div>
     <div class="intro">
-      <h1>Mastercraft Bamboo Monitor Riser</h1>
-      A beautiful & handcrafted monitor stand to reduce neck and eye strain.
-      <button id="back">Back this project</button>
+      <h4 id="mastercraft_heading">Mastercraft Bamboo Monitor Riser</h4>
+      <p id="mastercraft_heading_text">A beautiful & handcrafted monitor stand to reduce neck and eye strain.
+      </p>
+       <button id="back">Back this project</button>
       <button id="switcher">Bookmark</button>
       
     </div>
@@ -79,26 +79,27 @@
     </div>
 
     <div class="about"> 
-      <h1>About this project</h1>
-
+      <h4 id="about_heading">About this project</h4>
+      <p>
       The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
       to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
       your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
-    
+      <br><br>
       Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
       to allow notepads, pens, and USB sticks to be stored under the stand.
-  
+    </p>
       <div class="cards">
         <div class="card" id="card_1">
-          <h1>Bamboo Stand</h1>
-          <div class="results">Pledge $25 or more</div>
-          You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+          <h4>Bamboo Stand</h4>
+          <div class="results" id="pledge">Pledge $25 or more</div>
+          <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
           you’ll be added to a special Backer member list.
+          </p>
           <div class="n_left">101 left</div>
           <button>Select Reward</button>
         </div>
         <div class="card" id="card_2">
-          <h1>Black Edition Stand</h1>
+          <h4>Black Edition Stand</h4>
           <div class="results">Pledge $75 or more</div>
           You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
           member list. Shipping is included.
@@ -106,7 +107,7 @@
           <button>Select Reward</button>
         </div>
         <div class="card" id="card_3">
-          <h1>Mahogany Special Edition</h1>
+          <h4>Mahogany Special Edition</h4>
           <div class="results">Pledge $200 or more</div>
           You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
           to our Backer member list. Shipping is included.

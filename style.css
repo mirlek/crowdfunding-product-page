@@ -7,16 +7,22 @@
 body {
     font-family: 'Outfit', sans-serif;
     background-color: hsl(0, 0%, 100%);
-    color: hsl(0, 0%, 48%);
-    font-size: 16px;
     background-image: url("/images/image-hero-desktop.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 
 }
-
-h1 {
+h4 {
     color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+}
+
+p {
+    color: hsl(0, 0%, 48%);
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Outfit', sans-serif;
 }
 
 li {
@@ -24,16 +30,48 @@ li {
     text-decoration: none;
 }
 
-.header-sticky {
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
 .burger_nav_bar {
     display: none;
 }
 
+.header {
+    margin: 5% 10% 5% 10%;
+    text-align: center;
+    z-index: 2;
+
+}
+
+.nav {
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav__item {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 300;  
+    
+}
+.nav__item a {
+    color: white;
+    
+}
+.nav__item a:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.logo {
+    display: block;
+    z-index: 2;
+    position: sticky;
+    padding: 6%;
+} 
+
 @media only screen and (max-width: 600px) {
+    body {
+    background-image: url("/images/image-hero-mobile.jpg");
+    }
     .nav_bar {
         display: none;
     }
@@ -73,7 +111,7 @@ li {
         text-decoration: none;
         }
     .nav_container .nav_collapse {
-        align-items: flex-start;
+        align-items: flex-end;
     }    
     .nav_container .nav {
         flex-direction: column;
@@ -82,12 +120,7 @@ li {
     .nav_container .navigation {
         flex-direction: column !important;
       }
-    .logo {
-        display: block;
-        z-index: 2;
-        position: sticky;
-        padding: 6%;
-    }  
+     
 
     .burger_nav_bar {
         display: block;
@@ -137,44 +170,41 @@ li {
         transform: rotate(90deg);    
       }   
 
+    .mastercraft_logo img{
+        margin-left: 35%;
+    }
+
     }
 
     @media only screen and (min-width: 601px) and (max-width: 1440px) {
         .header .row {
             flex-wrap: nowrap;
+            margin: 0;
         }
-       
-    
-    }
-    
-    .nav {
-        justify-content: space-between;
-        display: flex;
-    }
-    
-    .nav__item {
-        font-family: 'Outfit', sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: uppercase;   
         
+    
     }
-    .nav__item a {
-        color: white;
+
+    @media only screen and (min-width: 1441px) and (max-width: 2560px) {
+        .header .row {
+            flex-wrap: nowrap;
+            margin: 0;
+        }
+        .mastercraft_logo img{
+            margin-left: 50%;
+        }
         
+    
     }
-    .nav__item a:hover {
-        color: black;
-        cursor: pointer;
-        text-decoration: none;
-    }
+
+
 
     .main_content {
         background-color: white;
         margin-top: 14%;
         width: 50%;
         margin-left: 25%;
-
+        position: relative;
     }
 
     .intro, .statistics {
@@ -188,3 +218,46 @@ li {
         border: 3px solid black;
     }
 
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+    .mastercraft_logo img{
+    display: block;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 45%;
+    }
+
+    #mastercraft_heading {
+        text-align: center;
+        margin-top: 8%;
+        font-weight: 700;
+    }
+
+    #mastercraft_heading_text {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #about_heading {
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .card {
+        padding: 20px;
+        position: relative;
+    }
+
+    #pledge {
+        position: absolute;
+        right: 20px;
+        color: hsl(176, 50%, 47%);
+        font-weight: 500;
+
+    }
