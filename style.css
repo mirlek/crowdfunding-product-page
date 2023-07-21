@@ -266,3 +266,35 @@ li {
     .line {
         border-right: 1px solid green;
     }
+    .btn-toolbar{ 
+        margin-top: 24px;
+    }
+
+    #back, #reward {
+        padding: 15px 40px 15px 40px;
+        border: 0cm;
+        border-radius: 40px;
+        background-color: hsl(176, 72%, 28%);
+        color: white;
+        font-weight: bold;
+    }
+
+    #switcher{
+        background-image: url('images/icon-bookmark.svg');
+        background-repeat: no-repeat;
+        padding: 15px 40px 15px 70px;
+        border: 0cm;
+        border-radius: 50px;
+        background-color: #E8E8E8;
+        font-weight: bold;
+    }
+
+    #switcher:before {
+        background-image: url('images/icon-bookmark.svg');
+        background-repeat: no-repeat;
+        padding: 20px 40px 20px 40px;
+        border: 0cm;
+        border-radius: 40px;
+        background-color: #E8E8E8;
+        font-weight: bold;
+    }
