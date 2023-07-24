@@ -264,7 +264,11 @@ li {
     }
 
     .line {
-        border-right: 1px solid green;
+        border-right: 1px solid grey;
+        height: 4.5rem;
+    }
+    .stat {
+        padding-left: 3% !important;
     }
     .btn-toolbar{ 
         margin-top: 24px;
@@ -289,12 +293,37 @@ li {
         font-weight: bold;
     }
 
-    #switcher:before {
-        background-image: url('images/icon-bookmark.svg');
+    #switcher. {
+        background-image: url('images/icon-bookmarked-green.jpg');
+        background-size: 30%;
         background-repeat: no-repeat;
-        padding: 20px 40px 20px 40px;
-        border: 0cm;
-        border-radius: 40px;
-        background-color: #E8E8E8;
+        padding: 15px 40px 15px 70px;
+        border: 1px solid hsl(176, 72%, 28%);
+        border-radius: 50px;
         font-weight: bold;
+        color: hsl(176, 72%, 28%);
     }
+
+    
+.progress {
+    --progress: 0%;
+    margin-top: 24px;
+  }
+  
+  .progress .bar {
+    width: var(--progress);
+    height: 100%;
+    border-radius: 25rem;
+    background: hsl(176, 72%, 28%);
+    animation: 
+      shine 4s ease-in infinite,
+      end 1s ease-out 1 7s;
+    transition: width 3s ease 3s;
+  }
+  
+  @property --progress {
+    syntax: "<length>";
+    initial-value: 0%;
+    inherits: true;
+  }
+  
