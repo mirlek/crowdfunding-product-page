@@ -283,7 +283,7 @@ li {
         font-weight: bold;
     }
 
-    #switcher{
+    .switcher_bookmarked_on {
         background-image: url('images/icon-bookmark.svg');
         background-repeat: no-repeat;
         padding: 15px 40px 15px 70px;
@@ -293,7 +293,7 @@ li {
         font-weight: bold;
     }
 
-    #switcher. {
+    .switcher_bookmarked_off {
         background-image: url('images/icon-bookmarked-green.jpg');
         background-size: 30%;
         background-repeat: no-repeat;
