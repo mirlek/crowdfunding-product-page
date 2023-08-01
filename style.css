@@ -293,7 +293,7 @@ li {
         font-weight: bold;
     }
 
-    .switcher_bookmarked_on{
+    .switcher_bookmarked_on {
         background-image: url('images/icon-bookmarked-green.jpg');
         background-size: 30%;
         background-repeat: no-repeat;
