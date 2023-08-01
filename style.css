@@ -283,7 +283,7 @@ li {
         font-weight: bold;
     }
 
-    .switcher_bookmarked_on {
+    .switcher_bookmarked_off {
         background-image: url('images/icon-bookmark.svg');
         background-repeat: no-repeat;
         padding: 15px 40px 15px 70px;
@@ -293,10 +293,11 @@ li {
         font-weight: bold;
     }
 
-    .switcher_bookmarked_off {
+    .switcher_bookmarked_on{
         background-image: url('images/icon-bookmarked-green.jpg');
         background-size: 30%;
         background-repeat: no-repeat;
+        background-color: white;
         padding: 15px 40px 15px 70px;
         border: 1px solid hsl(176, 72%, 28%);
         border-radius: 50px;
@@ -308,6 +309,7 @@ li {
 .progress {
     --progress: 0%;
     margin-top: 24px;
+    border-radius: 25rem !important;
   }
   
   .progress .bar {
@@ -315,9 +317,6 @@ li {
     height: 100%;
     border-radius: 25rem;
     background: hsl(176, 72%, 28%);
-    animation: 
-      shine 4s ease-in infinite,
-      end 1s ease-out 1 7s;
     transition: width 3s ease 3s;
   }
   
