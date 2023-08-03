@@ -251,18 +251,28 @@ li {
     }
 
     .card {
-        padding: 20px;
-        position: relative;
+        padding: 32px;
+        margin: 24px 0 24px 0;
+    }
+
+    .card-heading{
+        display: flex;
+        justify-content: space-between;
     }
 
     #pledge {
-        position: absolute;
-        right: 20px;
         color: hsl(176, 50%, 47%);
         font-weight: 500;
-
     }
 
+    #card-text{
+        margin: 20px 0 20px 0;
+        font-size: 16px;
+    }
+
+    #card_3{
+        margin-bottom: 0px;
+    }
     .line {
         border-right: 1px solid grey;
         height: 4.5rem;
@@ -287,10 +297,14 @@ li {
         background-image: url('images/icon-bookmark.svg');
         background-repeat: no-repeat;
         padding: 15px 40px 15px 70px;
-        border: 0cm;
+        border: 0.001cm solid transparent;
         border-radius: 50px;
         background-color: #E8E8E8;
+        
+    }
+    .switcher_bookmarked_off::before {
         font-weight: bold;
+        content: "Bookmark";
     }
 
     .switcher_bookmarked_on {
@@ -299,10 +313,13 @@ li {
         background-repeat: no-repeat;
         background-color: white;
         padding: 15px 40px 15px 70px;
-        border: 1px solid hsl(176, 72%, 28%);
+        border: 0.001cm solid hsl(176, 72%, 28%);
         border-radius: 50px;
+    }
+    .switcher_bookmarked_on::before {
         font-weight: bold;
         color: hsl(176, 72%, 28%);
+        content: "Bookmarked";
     }
 
     
@@ -326,3 +343,19 @@ li {
     inherits: true;
   }
   
+  .select-reward {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .n_left {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .n_left small {
+    color: grey;
+    font-size: 16px;
+    position: relative;
+    bottom: 8%;
+  }

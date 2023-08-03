@@ -73,8 +73,8 @@
         <div class="btn-back-to-proj">
           <button type="button" class="btn" id="back">Back this project</button>
         </div>
-        <div class="btn btn-bookmark">       
-          <button type="button" class="switcher_bookmarked_off switcher_bookmarked_on" onclick="toggleClass()" id="switcher">Bookmark</button>
+        <div class="btn-bookmark">       
+          <button type="button" class="switcher_bookmarked_off switcher_bookmarked_on" onclick="toggleClass()" id="switcher"></button>
         </div>
       </div>
       
@@ -113,31 +113,49 @@
     </p>
       <div class="cards">
         <div class="card" id="card_1">
-          <h4>Bamboo Stand</h4>
-          <div class="results" id="pledge">Pledge $25 or more</div>
-          <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+          <div class="card-heading">
+            <h4><b>Bamboo Stand</b></h4>
+            <div class="results" id="pledge">Pledge $25 or more</div>
+          </div>
+          <p id="card-text">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
           you’ll be added to a special Backer member list.
           </p>
-          <div class="n_left">101 left</div>
-          <div class="btn-select-reward">
-            <button type="button" class="btn" id="back">Select Reward</button>
+          <div class="select-reward">
+            <div class="n_left">101 <small>left</small></div>
+            <div class="btn-select-reward">
+              <button type="button" class="btn" id="back">Select Reward</button>
+            </div>
           </div>
         </div>
         <div class="card" id="card_2">
-          <h4>Black Edition Stand</h4>
-          <div class="results">Pledge $75 or more</div>
-          You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
-          member list. Shipping is included.
-          <div class="n_left">64 left</div>
-          <button>Select Reward</button>
+          <div class="card-heading">
+            <h4><b>Black Edition Stand</b></h4>
+            <div class="results" id="pledge">Pledge $75 or more</div>
+          </div>
+          <p id="card-text">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+            member list. Shipping is included.
+          </p>
+          <div class="select-reward">
+            <div class="n_left">64 <small>left</small></div>
+            <div class="btn-select-reward">
+              <button type="button" class="btn" id="back">Select Reward</button>
+            </div>
+          </div>
         </div>
         <div class="card" id="card_3">
-          <h4>Mahogany Special Edition</h4>
-          <div class="results">Pledge $200 or more</div>
-          You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
-          to our Backer member list. Shipping is included.
-          <div class="n_left">0 left</div>0 left
-          <button>Out of Stock</button>
+          <div class="card-heading">
+            <h4><b>Mahogany Special Edition</b></h4>
+            <div class="results" id="pledge">Pledge $200 or more</div>
+          </div>
+          <p id="card-text">You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
+            to our Backer member list. Shipping is included.
+          </p>
+          <div class="select-reward">
+            <div class="n_left">0 <small>left</small></div>
+            <div class="btn-select-reward">
+              <button type="button" class="btn" id="back">Out of Stock</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
