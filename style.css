@@ -359,3 +359,11 @@ li {
     position: relative;
     bottom: 8%;
   }
+
+  .modal-title{
+    padding-left: 16px;
+  }
+ .modal-intro-text{
+        padding: 0 32px 0 32px;
+        color: gray;
+    }

@@ -10,3 +10,5 @@ setTimeout(() => {
 function toggleClass() {
     el.classList.toggle("switcher_bookmarked_on");
   }
+
+ 
