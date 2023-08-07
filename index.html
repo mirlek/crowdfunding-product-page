@@ -77,21 +77,60 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<div class="modal fade bd-example-modal-lg bd-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Back this project</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-intro-text">
-        <p>  Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+      <div class="modal-intro-info">
+        <p class="modal-title">Back this project</p>
+        <div class="modal-intro-text">
+          <p>  Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+        </div>
       </div>
-      
       <div class="modal-body">
-        ...
+        <div class="modal-cards">
+          <div class="modal-card" id="modal-card-1">
+            <div class="select-reward">
+              <p id="modal-text-hover">Pledge with no reward</p>
+            </div>
+            <p>Pledge with no reward
+              Choose to support us without a reward if you simply believe in our project. As a backer, 
+              you will be signed up to receive product updates via email.</p>
+          </div>
+          <div class="modal-card" id="modal-card-2">
+            <div class="select-reward">
+              <p id="modal-text-hover">Bamboo Stand</p>
+              <p id="pledge">Pledge $25 or more</p>
+              <div class="n_left" id="n_left-modal">101 <span>left</span></div>
+            </div>
+            <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+              you’ll be added to a special Backer member list.
+            </p>
+          </div>
+          <div class="modal-card" id="modal-card-3">
+            <div class="select-reward">
+              <p id="modal-text-hover">Black Edition Stand</p>
+              <p id="pledge">Pledge $75 or more</p>
+              <div class="n_left" id="n_left-modal">64 <span>left</span></div>
+            </div>
+            <p>  
+              You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+              member list. Shipping is included.
+            </p>
+          </div>
+          <div class="modal-card" id="modal-card-4">
+            <div class="select-reward">
+              <p id="modal-text-hover">Mahogany Special Edition</p>
+              <p id="pledge">Pledge $200 or more</p>
+              <div class="n_left" id="n_left-modal">64 <span>left</span></div>
+            </div>
+            <p> You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+              to our Backer member list. Shipping is included.
+            </p>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
