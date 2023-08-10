@@ -403,3 +403,17 @@ li {
     font-weight: 400;
     
   }
+
+.gratitude{
+    padding: 32px;
+    display: block;
+    text-align: center;
+}
+.gratitude h3{
+    color: black;
+    margin: 32px 0 32px 0;
+}
+
+.gratitude p{
+    margin-bottom: 32px;
+}
