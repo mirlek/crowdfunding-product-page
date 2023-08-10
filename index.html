@@ -223,7 +223,35 @@
           <div class="select-reward">
             <div class="n_left">0 <small>left</small></div>
             <div class="btn-select-reward">
-              <button type="button" class="btn" id="back">Out of Stock</button>
+              <!-- <button type="button" class="btn" id="back">Out of Stock</button> -->
+
+                      <!-- БЛАГОДАРНОСТИ Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="button-out">
+  Out of Stock
+</button>
+<div class="modal fade bd-example-modal-lg bd-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+          <div class="gratitude" >
+            <div class="img">
+              
+            </div>
+            <h2>
+              Thanks for your support!
+            </h2>
+            <p> Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+              an email once our campaign is completed.
+            </p>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">Got it!</button>
+      </div>
+  </div>
+</div>
+</div>
+<!-- БЛАГОДАРНОСТИ ЗАКОНЧЕНЫ -->
             </div>
           </div>
         </div>
@@ -289,6 +317,8 @@
   Got it!
 
   <!-- Success modal end -->
+
+  
   <script src="App.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>

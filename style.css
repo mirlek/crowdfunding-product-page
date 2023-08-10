@@ -272,6 +272,7 @@ li {
 
     #card_3{
         margin-bottom: 0px;
+        color: grey;
     }
     .line {
         border-right: 1px solid grey;
@@ -292,7 +293,14 @@ li {
         color: white;
         font-weight: bold;
     }
-
+    #button-out{
+        background-color: #bcbcbc;
+        padding: 15px 40px 15px 40px;
+        border: 0cm;
+        border-radius: 40px;
+        color: white;
+        font-weight: bold;
+    }
     .switcher_bookmarked_off {
         background-image: url('images/icon-bookmark.svg');
         background-repeat: no-repeat;
@@ -309,7 +317,7 @@ li {
 
     .switcher_bookmarked_on {
         background-image: url('images/icon-bookmarked-green.jpg');
-        background-size: 30%;
+        background-size: 26%;
         background-repeat: no-repeat;
         background-color: white;
         padding: 15px 40px 15px 70px;
