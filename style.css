@@ -174,19 +174,441 @@ li {
     .mastercraft_logo img{
         margin-left: 35%;
     }
+    .main_content {
+        background-color: white;
+        margin-top: 14%;
+        width: 50%;
+        margin-left: 25%;
+        position: relative;
+    }
+
+    .intro, .statistics {
+        margin-bottom: 20px;
+        padding: 32px;
+        border: 3px solid black;
+    }
+    
+    .about {
+        padding: 32px;
+        border: 3px solid black;
+    }
+
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+    .mastercraft_logo img{
+    display: block;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 45%;
+    }
+
+    #mastercraft_heading {
+        text-align: center;
+        margin-top: 8%;
+        font-weight: 700;
+    }
+
+    #mastercraft_heading_text {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #about_heading {
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .card {
+        padding: 32px;
+        margin: 24px 0 24px 0;
+    }
+
+    .card-heading{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #pledge {
+        color: hsl(176, 50%, 47%);
+        font-weight: 500;
+    }
+
+    #card-text{
+        margin: 20px 0 20px 0;
+        font-size: 16px;
+    }
+
+    #card_3{
+        margin-bottom: 0px;
+        color: grey;
+    }
+    .line {
+        border-right: 1px solid grey;
+        height: 4.5rem;
+    }
+    .stat {
+        padding-left: 3% !important;
+    }
+    .btn-toolbar{ 
+        margin-top: 24px;
+    }
+
+    #back, #reward {
+        padding: 15px 40px 15px 40px;
+        border: 0cm;
+        border-radius: 40px;
+        background-color: hsl(176, 72%, 28%);
+        color: white;
+        font-weight: bold;
+    }
+    #button-out{
+        background-color: #bcbcbc;
+        padding: 15px 40px 15px 40px;
+        border: 0cm;
+        border-radius: 40px;
+        color: white;
+        font-weight: bold;
+    }
+    .switcher_bookmarked_off {
+        background-image: url('images/icon-bookmark.svg');
+        background-repeat: no-repeat;
+        padding: 8px 14px 8px 50px;
+        border: 0.001px solid gray;
+        margin-top: 14px;
+        border-radius: 50px;
+        background-size: 29%;
+    }
+    .switcher_bookmarked_off::before {
+        font-weight: bold;
+        content: "Bookmark";
+    }
+    .switcher_bookmarked_on {
+        background-image: url('images/icon-bookmarked-green.jpg');
+        background-size: 28%;
+        background-repeat: no-repeat;
+        border: 1px solid hsl(176, 72%, 28%);
+        background-color: white;
+        padding: 8px 8px 8px 40px;
+        border: 0.001px solid gray;
+        margin-top: 14px;
+        border-radius: 50px;
+    }
+    .switcher_bookmarked_on::before {
+        font-weight: bold;
+        color: hsl(176, 72%, 28%);
+        content: "Bookmarked";
+    }   
+    .progress {
+        --progress: 0%;
+        margin-top: 24px;
+        border-radius: 25rem !important;
+    }
+    
+    .progress .bar {
+        width: var(--progress);
+        height: 100%;
+        border-radius: 25rem;
+        background: hsl(176, 72%, 28%);
+        transition: width 3s ease 3s;
+    }
+    
+    @property --progress {
+        syntax: "<length>";
+        initial-value: 0%;
+        inherits: true;
+    }
+    
+    .select-reward {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .n_left {
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    .n_left small {
+        color: grey;
+        font-size: 16px;
+        position: relative;
+        bottom: 8%;
+    }
+
+    .modal-header{
+        border-bottom: solid white !important;
+        padding: 32px 32px 0px 32px !important;
+    }
+    .modal-intro-info{
+        padding: 0px 32px 0px 32px;
+    }
+    .modal-title{
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 24px;
+        color: black;
+    }
+    .modal-intro-text p{
+            color: gray;
+            margin: 0px;
+        }
+    .modal-body{
+        padding: 0px !important;
+    }    
+    .modal-card{
+        border: 1px solid rgb(199, 195, 195);
+        border-radius: 8px;
+        padding: 32px;
+        margin: 32px;
+    }
+    #n_left-modal{
+        font-size: 14px;   
+    }
+
+    #n_left-modal span {
+        color: grey;
+        font-weight: 400;
+        
+    }
+
+    .gratitude{
+        padding: 32px;
+        display: block;
+        text-align: center;
+    }
+    .gratitude h3{
+        color: black;
+        margin: 32px 0 32px 0;
+    }
+
+    .gratitude p{
+        margin-bottom: 32px;
+    }
 
     }
 
-    @media only screen and (min-width: 601px) and (max-width: 1440px) {
+    @media only screen and (min-width: 601px) and (max-width: 1439px) {
         .header .row {
             flex-wrap: nowrap;
             margin: 0;
+        }
+        .main_content {
+            background-color: white;
+            margin-top: 14%;
+            width: 50%;
+            margin-left: 25%;
+            position: relative;
+        }
+    
+        .intro, .statistics {
+            margin-bottom: 20px;
+            padding: 32px;
+            border: 3px solid black;
+        }
+        .statistics h1{
+            font-size: 24px;
+        }
+        
+        .about {
+            padding: 32px;
+            border: 3px solid black;
+        }
+    
+        .attribution { 
+            font-size: 11px; 
+            text-align: center; 
+        }
+        .attribution a { 
+            color: hsl(228, 45%, 44%); 
+        }
+    
+        .mastercraft_logo img{
+        display: block;
+        position: absolute;
+        margin-top: -25px;
+        margin-left: 45%;
+        }
+    
+        #mastercraft_heading {
+            text-align: center;
+            margin-top: 8%;
+            font-weight: 700;
+        }
+    
+        #mastercraft_heading_text {
+            text-align: center;
+            font-size: 14px;
+        }
+    
+        #about_heading {
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+    
+        .card {
+            padding: 32px;
+            margin: 24px 0 24px 0;
+        }
+    
+        .card-heading{
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        #pledge {
+            color: hsl(176, 50%, 47%);
+            font-weight: 500;
+        }
+    
+        #card-text{
+            margin: 20px 0 20px 0;
+            font-size: 16px;
+        }
+    
+        #card_3{
+            margin-bottom: 0px;
+            color: grey;
+        }
+        .line {
+            border-right: 1px solid grey;
+            height: 4.5rem;
+        }
+        .stat {
+            padding-left: 3% !important;
+        }
+        .btn-toolbar{ 
+            margin-top: 24px;
+        }
+    
+        #back, #reward {
+            padding: 15px 40px 15px 40px;
+            border: 0cm;
+            border-radius: 40px;
+            background-color: hsl(176, 72%, 28%);
+            color: white;
+            font-weight: bold;
+        }
+        #button-out{
+            background-color: #bcbcbc;
+            padding: 15px 40px 15px 40px;
+            border: 0cm;
+            border-radius: 40px;
+            color: white;
+            font-weight: bold;
+        }
+        .switcher_bookmarked_off {
+            background-image: url('images/icon-bookmark.svg');
+            background-repeat: no-repeat;
+            padding: 32px;
+            border: 1px solid transparent;
+            background-color: white;
+        }
+    
+        .switcher_bookmarked_on {
+            background-image: url('images/icon-bookmarked-green.jpg');
+            background-size: 86%;
+            background-repeat: no-repeat;
+            padding: 32px;
+            border: 1px solid transparent;
+            background-color: white;
+        }
+        .progress {
+            --progress: 0%;
+            margin-top: 24px;
+            border-radius: 25rem !important;
+        }
+        
+        .progress .bar {
+            width: var(--progress);
+            height: 100%;
+            border-radius: 25rem;
+            background: hsl(176, 72%, 28%);
+            transition: width 3s ease 3s;
+        }
+        
+        @property --progress {
+            syntax: "<length>";
+            initial-value: 0%;
+            inherits: true;
+        }
+        
+        .select-reward {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .n_left {
+            font-weight: bold;
+            font-size: 32px;
+        }
+    
+        .n_left small {
+            color: grey;
+            font-size: 16px;
+            position: relative;
+            bottom: 8%;
+        }
+    
+        .modal-header{
+            border-bottom: solid white !important;
+            padding: 32px 32px 0px 32px !important;
+        }
+        .modal-intro-info{
+            padding: 0px 32px 0px 32px;
+        }
+        .modal-title{
+            font-size: 24px;
+            font-weight: bold;
+            padding-bottom: 24px;
+            color: black;
+        }
+        .modal-intro-text p{
+                color: gray;
+                margin: 0px;
+            }
+        .modal-body{
+            padding: 0px !important;
+        }    
+        .modal-card{
+            border: 1px solid rgb(199, 195, 195);
+            border-radius: 8px;
+            padding: 32px;
+            margin: 32px;
+        }
+        #n_left-modal{
+            font-size: 14px;   
+        }
+    
+        #n_left-modal span {
+            color: grey;
+            font-weight: 400;
+            
+        }
+    
+        .gratitude{
+            padding: 32px;
+            display: block;
+            text-align: center;
+        }
+        .gratitude h3{
+            color: black;
+            margin: 32px 0 32px 0;
+        }
+    
+        .gratitude p{
+            margin-bottom: 32px;
         }
         
     
     }
 
-    @media only screen and (min-width: 1441px) and (max-width: 2560px) {
+    @media only screen and (min-width: 1440px) and (max-width: 2560px) {
         .header .row {
             flex-wrap: nowrap;
             margin: 0;
@@ -195,11 +617,6 @@ li {
             margin-left: 50%;
         }
         
-    
-    }
-
-
-
     .main_content {
         background-color: white;
         margin-top: 14%;
@@ -328,92 +745,117 @@ li {
         font-weight: bold;
         color: hsl(176, 72%, 28%);
         content: "Bookmarked";
+    }    
+    .progress {
+        --progress: 0%;
+        margin-top: 24px;
+        border-radius: 25rem !important;
+    }
+    
+    .progress .bar {
+        width: var(--progress);
+        height: 100%;
+        border-radius: 25rem;
+        background: hsl(176, 72%, 28%);
+        transition: width 3s ease 3s;
+    }
+    
+    @property --progress {
+        syntax: "<length>";
+        initial-value: 0%;
+        inherits: true;
+    }
+ 
+    .select-reward {
+        display: flex;
+        justify-content: space-between;
+    }
+    .n_left {
+        font-weight: bold;
+        font-size: 32px;
+    }
+    .n_left small {
+        color: grey;
+        font-size: 16px;
+        position: relative;
+        bottom: 8%;
     }
 
-    
-.progress {
-    --progress: 0%;
-    margin-top: 24px;
-    border-radius: 25rem !important;
-  }
-  
-  .progress .bar {
-    width: var(--progress);
-    height: 100%;
-    border-radius: 25rem;
-    background: hsl(176, 72%, 28%);
-    transition: width 3s ease 3s;
-  }
-  
-  @property --progress {
-    syntax: "<length>";
-    initial-value: 0%;
-    inherits: true;
-  }
-  
-  .select-reward {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .n_left {
-    font-weight: bold;
-    font-size: 32px;
-  }
-
-  .n_left small {
-    color: grey;
-    font-size: 16px;
-    position: relative;
-    bottom: 8%;
-  }
-
-  .modal-header{
-    border-bottom: solid white !important;
-    padding: 32px 32px 0px 32px !important;
-  }
-.modal-intro-info{
-    padding: 0px 32px 0px 32px;
-  }
-.modal-title{
-    font-size: 24px;
-    font-weight: bold;
-    padding-bottom: 24px;
-    color: black;
-  }
- .modal-intro-text p{
-        color: gray;
-        margin: 0px;
+    .modal-header{
+        border-bottom: solid white !important;
+        padding: 32px 32px 0px 32px !important;
     }
-.modal-body{
-    padding: 0px !important;
-}    
-.modal-card{
-    border: 1px solid rgb(199, 195, 195);
-    border-radius: 8px;
-    padding: 32px;
-    margin: 32px;
-}
-#n_left-modal{
-    font-size: 14px;   
-}
+    .modal-intro-info{
+        padding: 0px 32px 0px 32px;
+    }
+    .modal-title{
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 24px;
+        color: black;
+    }
+    .modal-intro-text p{
+            color: gray;
+            margin: 0px;
+    }
+    .modal-body{
+        padding: 0px !important;
+    }    
+    .modal-card{
+        border: 1px solid rgb(199, 195, 195);
+        border-radius: 8px;
+        padding: 32px;
+        margin: 32px;
+    }
+    #n_left-modal{
+        font-size: 14px;   
+    }
 
-#n_left-modal span {
-    color: grey;
-    font-weight: 400;
+    #n_left-modal span {
+        color: grey;
+        font-weight: 400;
+        
+    }
+
+    .gratitude{
+        padding: 32px;
+        display: block;
+        text-align: center;
+    }
+    .gratitude h3{
+        color: black;
+        margin: 32px 0 32px 0;
+    }
+
+    .gratitude p{
+        margin-bottom: 32px;
+    }
+    .dot {
+        height: 25px;
+        width: 25px;
+        background-color: white;
+        border: 1px solid hsl(176, 50%, 47%);
+        border-radius: 50%;
+        display: inline-block;
+    }
+    /* .dot::before {
+        background-color: hsl(176, 50%, 47%);
+        height: 18px;
+        width: 18px;
+        border: 1px solid hsl(176, 50%, 47%);
+        border-radius: 50%;
+    }  */
+    .dots-footer {
+        padding-top: 32px;
+        margin-top: 18px;
+        border-top: 0.5px solid gray;
+    }
+    #amount{
+        background-color: white;
+        border: 1px solid hsl(176, 50%, 47%);
+        border-radius: 50%;
+    }
     
-  }
+    }
 
-.gratitude{
-    padding: 32px;
-    display: block;
-    text-align: center;
-}
-.gratitude h3{
-    color: black;
-    margin: 32px 0 32px 0;
-}
 
-.gratitude p{
-    margin-bottom: 32px;
-}
