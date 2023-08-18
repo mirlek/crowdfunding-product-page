@@ -845,16 +845,39 @@ li {
         border: 1px solid hsl(176, 50%, 47%);
         border-radius: 50%;
     }  */
-    .dots-footer {
-        padding-top: 32px;
-        margin-top: 18px;
-        border-top: 0.5px solid gray;
+    .collapse-rules{
+        padding-top: 24px;
     }
-    #amount{
-        background-color: white;
+    .collapse-dot{
+        background-color: hsl(176, 50%, 47%);
+        height: 18px;
+        width: 18px;
         border: 1px solid hsl(176, 50%, 47%);
         border-radius: 50%;
     }
+    .dots-footer {
+        padding-top: 24px;
+        border-top: 0.5px solid gray;
+        align-items: center;
+    }
+    .dots-collapse-inpbuttons{
+        display: flex;
+        justify-content: end;
+        
+    }
+    #amount-form{
+        align-items:end;
+    }
+    .amount{
+        background-color: white;
+        border: 1px solid hsl(176, 50%, 47%);
+        border-radius: 43%;
+        padding: 0px 15px 0 15px;
+        width: 70%;
+        height: 100%;
+        font-weight: bold;
+    }
+    
     
     }
 
