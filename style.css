@@ -6,10 +6,10 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: hsl(0, 0%, 100%);
     background-image: url("/images/image-hero-desktop.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-color: rgb(242, 242, 241) !important;
 
 }
 
@@ -618,7 +618,6 @@ li {
         }
         
     .main_content {
-        background-color: white;
         margin-top: 14%;
         width: 50%;
         margin-left: 25%;
@@ -626,14 +625,14 @@ li {
     }
 
     .intro, .statistics {
-        margin-bottom: 20px;
+        background-color: white;
         padding: 32px;
-        border: 3px solid black;
+        margin-bottom: 24px;
     }
     
     .about {
         padding: 32px;
-        border: 3px solid black;
+        background-color: white;
     }
 
     .attribution { 
@@ -876,6 +875,16 @@ li {
         width: 70%;
         height: 100%;
         font-weight: bold;
+    }
+    #modal-card-4{
+        color: grey;
+    }
+    .email-form{
+        background-color: white;
+        border: 1px solid hsl(176, 50%, 47%);
+        padding: 15px 15px 15px 15px;
+        width: 90%;
+        height: 100%;
     }
     
     

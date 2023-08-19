@@ -39,12 +39,12 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
                           Discover
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#">
+                        <a href="index.html#card_1">
                           Get Started
                         </a>
                     </li>
@@ -108,14 +108,14 @@
               </div>
               <div class="collapse toggle collapse-rules" id="collapseExample1">
                 <div class="dots-footer row">
-                  <div class="col-lg-7 col-md-7 col-sm-7">
-                    <h5 style="color:gray;">Enter your pledge</h5>
+                  <div class="col-lg-5 col-md-5 col-sm-5">
+                    <h5 style="color:gray;">Enter your e-mail</h5>
                   </div>
-                  <div class="col-lg-5 col-md-5 col-sm-5 dots-collapse-inpbuttons">
+                  <div class="col-lg-7 col-md-7 col-sm-7 dots-collapse-inpbuttons">
                     <form method="post" action="#" id="amount-form">
-                      <input type="text" name="currency-field" class="amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$">
+                      <input type="text" name="email-field" class="email-form" value="" placeholder="email@gmail.com">
                     </form>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="back">Continue</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="back">Confirm</button>
                   </div>
                 </div>
               </div>
@@ -146,7 +146,7 @@
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-5 dots-collapse-inpbuttons">
                     <form method="post" action="#" id="amount-form">
-                      <input type="text" name="currency-field" class="amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$">
+                      <input type="text" name="currency-field" class="amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$ 25">
                     </form>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="back">Continue</button>
                   </div>
@@ -179,7 +179,7 @@
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-5 dots-collapse-inpbuttons">
                     <form method="post" action="#" id="amount-form">
-                      <input type="text" name="currency-field" class="amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$">
+                      <input type="text" name="currency-field" class="amount" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$ 75">
                     </form>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="back">Continue</button>
                   </div>
@@ -190,7 +190,7 @@
           <div class="modal-card" id="modal-card-4">
             <div class="row">
               <div class="col-lg-1 col-md-1 dots-extension">
-                <a class="btn" role="button" data-bs-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                <a class="btn" role="button" data-bs-toggle="collapse" href="#" aria-expanded="false" aria-controls="collapseExample4">
                   <span class="dot"></span>
                 </a>
                 
@@ -222,10 +222,6 @@
             </div>
         </div>
       </div>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
     </div>
   </div>
 </div>
@@ -283,7 +279,31 @@
           <div class="select-reward">
             <div class="n_left">101 <small>left</small></div>
             <div class="btn-select-reward">
-              <button type="button" class="btn" id="back">Select Reward</button>
+              <!-- БЛАГОДАРНОСТИ Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleGratitude" id="back" >
+                Select Reward
+              </button>
+              <div class="modal fade" id="exampleGratitude" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="gratitude" >
+                          <div class="img">
+                            <img src="/images/icon-check.svg" alt="">
+                          </div>
+                          <h3>
+                            Thanks for your support!
+                          </h3>
+                          <p> Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+                            an email once our campaign is completed.
+                          </p>
+                          <button type="button" class="" data-bs-dismiss="modal" id="back">Got it!</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- БЛАГОДАРНОСТИ ЗАКОНЧЕНЫ -->
             </div>
           </div>
         </div>
@@ -298,7 +318,31 @@
           <div class="select-reward">
             <div class="n_left">64 <small>left</small></div>
             <div class="btn-select-reward">
-              <button type="button" class="btn" id="back">Select Reward</button>
+              <!-- БЛАГОДАРНОСТИ Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleGratitude" id="back" >
+                Select Reward
+              </button>
+              <div class="modal fade" id="exampleGratitude" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="gratitude" >
+                          <div class="img">
+                            <img src="/images/icon-check.svg" alt="">
+                          </div>
+                          <h3>
+                            Thanks for your support!
+                          </h3>
+                          <p> Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+                            an email once our campaign is completed.
+                          </p>
+                          <button type="button" class="" data-bs-dismiss="modal" id="back">Got it!</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- БЛАГОДАРНОСТИ ЗАКОНЧЕНЫ -->
             </div>
           </div>
         </div>
@@ -313,13 +357,11 @@
           <div class="select-reward">
             <div class="n_left">0 <small>left</small></div>
             <div class="btn-select-reward">
-              <!-- <button type="button" class="btn" id="back">Out of Stock</button> -->
-
                       <!-- БЛАГОДАРНОСТИ Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="button-out">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleGratitude" id="button-out" disabled>
   Out of Stock
 </button>
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleGratitude" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -333,7 +375,7 @@
             <p> Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
               an email once our campaign is completed.
             </p>
-            <button type="button" class="btn" data-dismiss="modal" id="back">Got it!</button>
+            <button type="button" class="" data-bs-dismiss="modal" id="back">Got it!</button>
           </div>
       </div>
   </div>
@@ -350,61 +392,6 @@
   </div>
 </section>      
 
-  <!-- Selection modal start -->
-
-  Back this project
-  Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
-
-  Pledge with no reward
-  Choose to support us without a reward if you simply believe in our project. As a backer, 
-  you will be signed up to receive product updates via email.
-
-  Bamboo Stand
-  Pledge $25 or more
-  You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-  you’ll be added to a special Backer member list.
-  101 left
-
-  <!-- Selected pledge start -->
-  Enter your pledge
-  $25
-  Continue
-  <!-- Selected pledge end -->
-
-  Black Edition Stand
-  Pledge $75 or more
-  You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-  member list. Shipping is included.
-  64 left
-
-  <!-- Selected pledge start -->
-  Enter your pledge
-  $75
-  Continue
-  <!-- Selected pledge end -->
-
-  Mahogany Special Edition
-  Pledge $200 or more
-  You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-  to our Backer member list. Shipping is included.
-  0 left
-
-  <!-- Selected pledge  start -->
-  Enter your pledge
-  $200
-  Continue
-  <!-- Selected pledge end -->
-
-  <!-- Selection modal end -->
-
-  <!-- Success modal start -->
-
-  Thanks for your support!
-  Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-  an email once our campaign is completed.
-  Got it!
-
-  <!-- Success modal end -->
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="App.js"></script>
