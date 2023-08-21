@@ -73,6 +73,11 @@ li {
     body {
     background-image: url("/images/image-hero-mobile.jpg");
     }
+    .main_content {
+        margin-top: 14%;
+        margin: 10%;
+        position: relative;
+    }
     .nav_bar {
         display: none;
     }
@@ -175,7 +180,6 @@ li {
         margin-left: 35%;
     }
     .main_content {
-        background-color: white;
         margin-top: 14%;
         width: 50%;
         margin-left: 25%;
@@ -185,12 +189,12 @@ li {
     .intro, .statistics {
         margin-bottom: 20px;
         padding: 32px;
-        border: 3px solid black;
+        background-color: white;
     }
     
     .about {
         padding: 32px;
-        border: 3px solid black;
+        background-color: white;
     }
 
     .attribution { 
@@ -229,11 +233,6 @@ li {
         margin: 24px 0 24px 0;
     }
 
-    .card-heading{
-        display: flex;
-        justify-content: space-between;
-    }
-
     #pledge {
         color: hsl(176, 50%, 47%);
         font-weight: 500;
@@ -248,12 +247,13 @@ li {
         margin-bottom: 0px;
         color: grey;
     }
+    
     .line {
-        border-right: 1px solid grey;
-        height: 4.5rem;
+        text-align: center;
+        margin-bottom: 14px;
     }
-    .stat {
-        padding-left: 3% !important;
+    .stat{
+        text-align: center;
     }
     .btn-toolbar{ 
         margin-top: 24px;
@@ -323,15 +323,11 @@ li {
         initial-value: 0%;
         inherits: true;
     }
-    
-    .select-reward {
-        display: flex;
-        justify-content: space-between;
-    }
 
     .n_left {
         font-weight: bold;
-        font-size: 32px;
+        font-size: 18px;
+        margin-bottom: 14px;
     }
 
     .n_left small {
@@ -390,6 +386,56 @@ li {
     .gratitude p{
         margin-bottom: 32px;
     }
+    .dot {
+        height: 25px;
+        width: 25px;
+        background-color: white;
+        border: 1px solid hsl(176, 50%, 47%);
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .collapse-rules{
+        padding-top: 24px;
+    }
+    .collapse-dot{
+        background-color: hsl(176, 50%, 47%);
+        height: 18px;
+        width: 18px;
+        border: 1px solid hsl(176, 50%, 47%);
+        border-radius: 50%;
+    }
+    .dots-footer {
+        padding-top: 24px;
+        border-top: 0.5px solid gray;
+        align-items: center;
+    }
+    .dots-collapse-inpbuttons{
+        display: flex;
+        justify-content: end;
+        
+    }
+    #amount-form{
+        align-items:end;
+    }
+    .amount{
+        background-color: white;
+        border: 1px solid hsl(176, 50%, 47%);
+        border-radius: 43%;
+        padding: 0px 15px 0 15px;
+        width: 70%;
+        height: 100%;
+        font-weight: bold;
+    }
+    #modal-card-4{
+        color: grey;
+    }
+    .email-form{
+        background-color: white;
+        border: 1px solid hsl(176, 50%, 47%);
+        padding: 15px 15px 15px 15px;
+        width: 90%;
+        height: 100%;
+    }
 
     }
 
@@ -399,7 +445,6 @@ li {
             margin: 0;
         }
         .main_content {
-            background-color: white;
             margin-top: 14%;
             width: 50%;
             margin-left: 25%;
@@ -409,7 +454,8 @@ li {
         .intro, .statistics {
             margin-bottom: 20px;
             padding: 32px;
-            border: 3px solid black;
+            background-color: white;
+            
         }
         .statistics h1{
             font-size: 24px;
@@ -417,7 +463,7 @@ li {
         
         .about {
             padding: 32px;
-            border: 3px solid black;
+            background-color: white;
         }
     
         .attribution { 
@@ -542,15 +588,15 @@ li {
             display: flex;
             justify-content: space-between;
         }
-    
+
         .n_left {
             font-weight: bold;
-            font-size: 32px;
+            font-size: 18px;
         }
     
         .n_left small {
             color: grey;
-            font-size: 16px;
+            font-size: 14px;
             position: relative;
             bottom: 8%;
         }
@@ -603,6 +649,56 @@ li {
     
         .gratitude p{
             margin-bottom: 32px;
+        }
+        .dot {
+            height: 25px;
+            width: 25px;
+            background-color: white;
+            border: 1px solid hsl(176, 50%, 47%);
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .collapse-rules{
+            padding-top: 24px;
+        }
+        .collapse-dot{
+            background-color: hsl(176, 50%, 47%);
+            height: 18px;
+            width: 18px;
+            border: 1px solid hsl(176, 50%, 47%);
+            border-radius: 50%;
+        }
+        .dots-footer {
+            padding-top: 24px;
+            border-top: 0.5px solid gray;
+            align-items: center;
+        }
+        .dots-collapse-inpbuttons{
+            display: flex;
+            justify-content: end;
+            
+        }
+        #amount-form{
+            align-items:end;
+        }
+        .amount{
+            background-color: white;
+            border: 1px solid hsl(176, 50%, 47%);
+            border-radius: 43%;
+            padding: 0px 15px 0 15px;
+            width: 70%;
+            height: 100%;
+            font-weight: bold;
+        }
+        #modal-card-4{
+            color: grey;
+        }
+        .email-form{
+            background-color: white;
+            border: 1px solid hsl(176, 50%, 47%);
+            padding: 15px 15px 15px 15px;
+            width: 90%;
+            height: 100%;
         }
         
     
@@ -769,6 +865,9 @@ li {
         display: flex;
         justify-content: space-between;
     }
+    .select-reward h5:hover{
+        color: hsl(176, 72%, 28%);
+    }
     .n_left {
         font-weight: bold;
         font-size: 32px;
@@ -837,13 +936,6 @@ li {
         border-radius: 50%;
         display: inline-block;
     }
-    /* .dot::before {
-        background-color: hsl(176, 50%, 47%);
-        height: 18px;
-        width: 18px;
-        border: 1px solid hsl(176, 50%, 47%);
-        border-radius: 50%;
-    }  */
     .collapse-rules{
         padding-top: 24px;
     }
