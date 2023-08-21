@@ -364,11 +364,12 @@ li {
         margin: 32px;
     }
     #n_left-modal{
-        font-size: 14px;   
+        font-size: 8px;
+        color: white;   
     }
 
     #n_left-modal span {
-        color: grey;
+        color: white;
         font-weight: 400;
         
     }
@@ -867,6 +868,12 @@ li {
     }
     .select-reward h5:hover{
         color: hsl(176, 72%, 28%);
+    }
+    .select-reward-text h5:hover{
+        color: hsl(176, 72%, 28%);
+    }
+    #blocked-card-4:hover{
+        color: grey;
     }
     .n_left {
         font-weight: bold;
