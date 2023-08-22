@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-image: url("/images/image-hero-desktop.jpg");
+    background-image: url("images/image-hero-desktop.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: rgb(242, 242, 241) !important;
